@@ -1,0 +1,133 @@
+.place {
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 410px; /* Fixed width for all cards */
+    margin:  0 ;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack image, name, and other content */
+    height: 500px; /* Fixed height for the card */
+    z-index: 1;
+  }
+  
+  .place:hover {
+    transform: translateY(-8px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Force the image to be 230px height */
+  .place-image {
+    width: 100%; /* Full width of the parent */
+    height: 330px; /* Fixed height */
+    object-fit: cover; /* Crop and fill the box */
+    border-bottom: 2px solid #eaeaea; /* Divider line below image */
+  }
+  
+  /* Name of the Place (bold, prominent) */
+  .place-name {
+    font-size: 1.6em; /* Emphasized name */
+    margin: 10px;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+  }
+  
+  /* Location Styling */
+  .place-location {
+    font-size: 0.9em;
+    margin: 5px 10px;
+    color: #888; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .place-location::before {
+    content: "📍"; /* Location pin icon */
+    color: #888;
+  }
+  
+  /* Rating Styling */
+  .place-rating {
+    font-size: 1em;
+    color: #555;
+    margin: 10px;
+  }
+  .place-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  /* بدي هاد التعديل...سهاد */
+  .circular-btn:hover{
+    background-color: #ddd8d8;
+    transform: scale(1.1); 
+  }
+.circular-btn.active {
+    color: rgb(117, 5, 5);
+}
+.circular-btn.active-check {
+    color: rgb(1, 110, 1); 
+}
+.circular-btn.active-share {
+    color: rgb(180, 180, 33);
+}
+  .place:hover .place-buttons {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* Circular buttons for interactions */
+  .circular-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color:#e9e5e5;
+    color: #6d6868;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  .place-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .star-container {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  }
+  
+  .star-container div {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .place {
+      width: 90%; /* Make card width responsive */
+    }
+  }
+  @media (min-width: 300px) {
+    .place {
+      width: 90%; /* Make card width responsive */
+      margin-left:1rem;
+      margin-right:1rem;
+      
+    }
+  }

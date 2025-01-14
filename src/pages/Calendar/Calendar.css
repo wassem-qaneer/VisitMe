@@ -1,0 +1,149 @@
+.wa-se {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wa-header {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+
+.wa-label.wa-input {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.wa-input {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.wa-label {
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.wa-textarea {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.wa-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #800020;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.wa-button:hover {
+    background-color: #52a852;
+}
+
+#close {
+    background-color: #555;
+}
+
+/*------------------------------------------------------------------------------*/
+
+.fc-daygrid-day {
+    background-color: #f4eeee;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #555
+}
+
+.fc-toolbar-title {
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    color: #800020;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .fc-toolbar-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fc-toolbar-title {
+        font-size: 14px;
+    }
+}
+
+.fc-daygrid-day-number {
+    color: #990127;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #817e7ec0;
+}
+
+.fc-event {
+    background-color: #800020;
+    padding: 1px 5px;
+    color: white;
+    border-radius: 5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.fc-event:hover {
+    background-color: #a40029;
+}
+
+.fc-daygrid-day {
+    background-color: #f2f1f1;
+}
+
+.fc-daygrid-day-events {
+    padding-left: 5px;
+}
+
+.search-bar {
+    display: block;
+    margin: 10px auto;
+    height: 32px;
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #ccccccec;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #800020;
+}

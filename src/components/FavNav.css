@@ -1,0 +1,48 @@
+.remaa-fav-nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 ;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #ffffff00;
+  overflow-x: auto;
+}
+
+.remaa-fav-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 9px;
+  margin: 0;
+}
+
+.remaa-fav-nav-item {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 2px solid #640017d3;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.435);
+  font-family: "Georgia", serif;
+  font-size: 19px;
+  font-weight: 590px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.remaa-fav-nav-item:active {
+  background-color:  #830522e1 !important;
+  color:#f5f5d5 !important;
+}
+.remaa-fav-nav-item:hover{
+  background-color: #640017c6 ;
+  color:#f5f5d5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
