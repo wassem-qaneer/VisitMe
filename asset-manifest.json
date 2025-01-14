@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/VisitMe/static/css/main.2f011005.css",
+    "main.js": "/VisitMe/static/js/main.fd4096c7.js",
+    "static/media/videoplayback.mp4": "/VisitMe/static/media/videoplayback.aaab7f78ea7af4e18ce3.mp4",
+    "static/media/quds.jpg": "/VisitMe/static/media/quds.abadd9f5f8d462cf94a0.jpg",
+    "static/media/slide1 (1).jpg": "/VisitMe/static/media/slide1 (1).1121bcd39a11b1cb7621.jpg",
+    "static/media/Ashour.jpg": "/VisitMe/static/media/Ashour.8472463a086e9c8239ec.jpg",
+    "static/media/img-home.jpg": "/VisitMe/static/media/img-home.c034239ee9a63564602b.jpg",
+    "static/media/Wassem.jpg": "/VisitMe/static/media/Wassem.d936598ddecd1ad60480.jpg",
+    "static/media/Hamza.jpg": "/VisitMe/static/media/Hamza.20ddca918cf41605ac9a.jpg",
+    "static/media/Dareen2006.jpg": "/VisitMe/static/media/Dareen2006.8a93c8c954e71336b8de.jpg",
+    "static/media/decoration.jpg": "/VisitMe/static/media/decoration.5e286924838109596492.jpg",
+    "static/media/Suhad.jpg": "/VisitMe/static/media/Suhad.e71ab918b762bcfb9e12.jpg",
+    "static/media/remaa.jpg": "/VisitMe/static/media/remaa.cbc34f9186169bf12de5.jpg",
+    "static/media/logo.png": "/VisitMe/static/media/logo.c3d10e3648fca66ee97d.png",
+    "static/media/Hamza2.jpg": "/VisitMe/static/media/Hamza2.93809a5f514c094edd3b.jpg",
+    "static/media/slick.svg": "/VisitMe/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/VisitMe/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/VisitMe/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/VisitMe/index.html",
+    "static/media/slick.woff": "/VisitMe/static/media/slick.295183786cd8a1389865.woff",
+    "main.2f011005.css.map": "/VisitMe/static/css/main.2f011005.css.map",
+    "main.fd4096c7.js.map": "/VisitMe/static/js/main.fd4096c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f011005.css",
+    "static/js/main.fd4096c7.js"
+  ]
+}
