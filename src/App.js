@@ -20,7 +20,6 @@ import SecondaryNavBar from "./components/SecondaryNavBar.js";
 import FeedBackCardSlider from "./components/FeedBackSection/FeedBackCardSlider.js";
 import TeamPage from "./pages/AboutUs/TeamPage.js";
 
-
 function App() {
   const [places, setPlaces] = useState([]);
 
@@ -62,19 +61,23 @@ function App() {
       <ScrollTop />
       <MyChatBot />
 
-      <Router>
+      <Router basename="/VisitMe"> {/* إضافة basename هنا */}
         <Routes>
           <Route path="/" element={<Login places={places} />} />
-<Route path="team-page" element ={
-  <>
-  <NavBar
+          <Route
+            path="team-page"
+            element={
+              <>
+                <NavBar
                   BrandName="VisitMe"
                   i1="Home"
                   i2="Calendar"
                   i3=" My Favorites"
                 />
-  <TeamPage/></>
-}></Route>
+                <TeamPage />
+              </>
+            }
+          />
           <Route
             path="/add-place"
             element={
@@ -84,7 +87,7 @@ function App() {
                   i1="Home"
                   i2="Calendar"
                   i3=" My Favorites"
-                />{" "}
+                />
                 <SecondaryNavBar />
                 <AddPlace onAddPlace={handleAddPlace} />
               </>
@@ -100,14 +103,10 @@ function App() {
                   i2="Calendar"
                   i3=" My Favorites"
                 />
-                <PlacePage
-                  places={places}
-                  updatePlaceRating={updatePlaceRating}
-                />
+                <PlacePage places={places} updatePlaceRating={updatePlaceRating} />
               </>
             }
           />
-
           <Route
             path="/favorites"
             element={
@@ -137,24 +136,20 @@ function App() {
               </>
             }
           />
-
           <Route
             path="/feedback"
             element={
               <>
-               {/* <SecondaryNavBar /> */}
-                
                 <NavBar
                   BrandName="VisitMe"
                   i1="Home"
                   i2="Calendar"
                   i3=" My Favorites"
                 />
-               <UserFeedBack />
+                <UserFeedBack />
               </>
             }
           />
-
           <Route
             path="/profile-page"
             element={
@@ -183,7 +178,6 @@ function App() {
               </>
             }
           />
-
           <Route
             path="/calendar"
             element={
@@ -199,7 +193,6 @@ function App() {
             }
           />
           <Route path="/login" element={<Login places={places} />} />
-
           <Route
             path="/about-us"
             element={
@@ -213,10 +206,8 @@ function App() {
                 <AboutUs places={places} />
               </>
             }
-          ></Route>
+          />
           <Route path="/SignUp" element={<SignUp />} />
-
-
           <Route
             path="/HomePage"
             element={
@@ -231,10 +222,7 @@ function App() {
               </>
             }
           />
-
-
           <Route path="/UserFeedBack" element={<UserFeedBack />} />
-
         </Routes>
       </Router>
     </>
